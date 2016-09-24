@@ -1,0 +1,16 @@
+p#bor {
+	border-left: 4px dashed blueviolet
+}
+
+ol {
+	color: green;
+	font-size: 19px;
+	text-decoration: underline;
+}
+
+p.end {
+	border-bottom-style: dashed;
+	border-bottom-width: 2px;
+	text-align: center;
+}
+
