@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+}
+.header, .footer {
+    background-color: grey;
+    padding: 50px 100px;
+}
+.container-3 {
+    float:left;
+    width:100%;
+    background:red;
+    overflow:hidden;
+    position:relative;
+}
+.container-2 {
+    float:left;
+    width:100%;
+    background:blue;
+    position:relative;
+    right:30%;
+}
+.container-1 {
+    float:left;
+    width:100%;
+    background:green;
+    position:relative;
+    right:40%;
+}
+.aside1 {
+    float:left;
+    width:26%;
+    position:relative;
+    left:72%;
+    overflow:hidden;
+    text-align: center;
+}
+.content {
+    float:left;
+    width:36%;
+    position:relative;
+    left:76%;
+    overflow:hidden;
+}
+.aside2 {
+    float:left;
+    width:26%;
+    position:relative;
+    left:80%;
+    overflow:hidden;
+    text-align: center;
+}
