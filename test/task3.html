@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			box-sizing: border-box;
+			padding: 0;margin: 0;
+			font-family: sans-serif;
+			font-style: Arial;
+			font-size: 14px;
+		}
+		form {
+			height: 220px;
+    		width: 400px;
+    		margin: 10px auto;
+    		padding: 15px 12px;
+    		border: 1px solid black;
+    		box-shadow: 
+    			0 20px 50px 0 rgba(0, 0, 0, 0.3),
+    			0 0 4px 1px rgba(0, 0, 0, 0.1) inset;
+   		}
+   		input[type="text"] {
+   			width: 366px;
+   			border: 1px solid black;
+   			height: 22px;
+   			margin-top: 6px;
+   			margin-bottom: 13px;
+			padding-left: 5px;
+   		}
+   		label span {
+   			margin-bottom: 6px;
+   		}
+   		.radio-group p{
+   			margin-bottom: 13px;
+   		}
+   		button {
+   			background-color: black;
+   			color: white;
+   			width: 118px;
+   			height: 20px;
+   			border: 0;
+   		}
+   		label input[type="radio"] {
+  			display: none;
+		}
+		label input[type="radio"] ~ span {
+		  	position: relative;
+			display: inline-block;
+			padding: 3px 0 3px 25px;
+		}
+		label input[type="radio"] ~ span:before {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 10px;
+			height: 10px;
+			background: #fff;
+			border: 1px solid black;
+			border-radius: 50%;
+			left: 9px;
+			top: 6px;
+			box-sizing: border-box;
+		}
+		label input[type="radio"]:checked ~ span:before {
+		    border: 3px solid black;
+		}
+   	</style>
+</head>
+<body>
+	<form>
+		<div class="data">	
+			<label>Ваше имя</label><br>
+			<input type="text" placeholder="Например, Иванов Иван Иванович"><br>
+		</div>
+		<div class="data">
+			<label>Ваш род деятельности</label><br>
+			<input type="text" placeholder="Например, выращиваю огурцы">
+		</div>
+		<div class="radio-group">
+			<p>Согласны ли Вы с условиями?</p>
+		    <label>
+		        <input type="radio" name="radiogroup"> 
+		        <span>Категорически ДА!</span>
+		    </label>
+		    <label>
+		    	<input type="radio" name="radiogroup"> 
+		    	<span>Категорически НЕТ!</span>
+		    </label>
+		</div>
+		<button type="submit" class="btn">Отправить</button>
+	</form>
+</body>
+</html>
